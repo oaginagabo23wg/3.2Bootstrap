@@ -6,43 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3.2 Ariketa</title>
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        /* Estilo para el contenedor principal */
+        #gorputza {
+            width: 70%;
+            margin: auto;
+            background-color: #fcdddd;
+        }
+        .btn-primary:hover {
+        background-color: #0ea500; /* Cambia el color de fondo al hacer hover */
+        border-color: #0ea500; /* Cambia el color del borde al hacer hover */
+    }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Coca-Cola</h1>
-        <img src="images/Coca-Cola_logo.png" alt="Coca-Cola Logo" style="width:10%">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Zein gara</a></li>
-            <li><a href="motak.html">Motak</a></li>
-            <li><a href="form.html">Zein da zure gustukoena?</a></li>
-        </ul>
-    </nav>
-    <article>
-        <form id="ccForm">
-            <label for="CCgustukoena">Zein da gustukoen duzun Coca-Cola?</label>
-            <input type="text" id="CCgustukoena" name="CCgustukoena" class="form-control"><br>
+    <div id="gorputza">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Coca-Cola_logo.png" alt="Coca-Cola Logo" style="width: 100px;">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Zein gara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="motak.html">Motak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Zein da zure gustukoena?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <article class="d-flex justify-content-center mt-4">
+            <form id="ccForm" class="w-75">
+                <div class="mb-3">
+                    <label for="CCgustukoena" class="form-label">Zein da gustukoen duzun Coca-Cola?</label>
+                    <input type="text" id="CCgustukoena" name="CCgustukoena" class="form-control"><br>
+                </div>
 
-            <label for="CCzer">Zer gustatzen zaizu bereziki?</label>
-            <input type="text" id="CCzer" name="CCzer" class="form-control"><br>
+                <div class="mb-3">
+                    <label for="CCzer" class="form-label">Zer gustatzen zaizu bereziki?</label>
+                    <input type="text" id="CCzer" name="CCzer" class="form-control"><br>
+                </div>
 
-            <label for="CCberria">Ze Coca-Cola bertsio berri gustatuko litzaizuke?</label>
-            <input type="text" id="CCberria" name="CCberria" class="form-control"><br>
+                <div class="mb-3">
+                    <label for="CCberria" class="form-label">Ze Coca-Cola bertsio berri gustatuko litzaizuke?</label>
+                    <input type="text" id="CCberria" name="CCberria" class="form-control"><br>
+                </div>
 
-            <button type="submit" class="btn btn-primary">Bidali</button>
-        </form>
+                <button type="submit" class="btn btn-primary">Bidali</button>
+            </form>
+        </article>
 
-        <div class="progress">
-            <div id="progressBar" class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+        <div class="progress mt-4">
+            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-    </article>
-    <footer>
-        <h3>Jarrai iezaguzu</h3>
-        <a href="https://twitter.com/CocaColaCo_es"> Twitter</a>
-        <a href="https://www.youtube.com/CocaColaJourneyES"> YouTube</a>
-        <a href="https://www.facebook.com/CocaColaCoEspana/">Facebook</a>
+    </div>
+
+    <footer class="bg-dark text-center p-3 sticky-bottom container mt-4">
+        <h3 class="text-white">Jarrai iezaguzu</h3>
+        <a href="https://twitter.com/CocaColaCo_es" class="text-white">Twitter</a> |
+        <a href="https://www.youtube.com/CocaColaJourneyES" class="text-white">YouTube</a> |
+        <a href="https://www.facebook.com/CocaColaCoEspana/" class="text-white">Facebook</a>
     </footer>
 
     <script>
@@ -65,7 +102,6 @@
             const progressPercentage = (filledInputs / inputs.length) * 100;
             progressBar.style.width = progressPercentage + '%';
             progressBar.setAttribute('aria-valuenow', progressPercentage);
-            progressBar.textContent = Math.round(progressPercentage) + '%';
         }
     </script>
 </body>

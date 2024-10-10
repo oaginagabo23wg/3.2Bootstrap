@@ -6,37 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3.2 Ariketa</title>
     <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.js"></script>
+    <style>
+        /* Estilo para el contenedor principal */
+        #gorputza {
+            width: 70%;
+            margin: auto;
+            background-color: #fcdddd;
+        }
+        img {
+            width: 50%;
+            height: 50%;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Coca-Cola</h1>
-        <img src="images/Coca-Cola_logo.png">
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Zein gara</a></li>
-            <li><a href="motak.html">Motak</a></li>
-            <li><a href="form.html">Zein da zure gustukoena?</a></li>
-        </ul>
-    </nav>
-    <article>
-        <h3>Bainila</h3>
-        <img src="images/vanilla.jpeg">
-        <h3>Kafea</h3>
-        <img src="images/cocacafe.webp">
-        <h3>Oreo</h3>
-        <img src="images/oreo.jpg">
-        <h3>Txorizo</h3>
-        <img src="images/txoixu.webp">
-        <h3>Gerezi</h3>
-        <img src="images/Cherry.jpg">
-    </article>
-    <footer>
-        <h3>Jarrai iezaguzu</h3>
-        <a href="https://twitter.com/CocaColaCo_es"> Twitter</a>
-        <a href="https://www.youtube.com/CocaColaJourneyES"> YouTube</a>
-        <a href="https://www.facebook.com/CocaColaCoEspana/">Facebook</a>
+    <div id="gorputza">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Coca-Cola_logo.png" alt="Coca-Cola Logo" style="width: 100px;">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Zein gara</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="motak.html">Motak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Zein da zure gustukoena?</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <article class="container mt-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Bainila</h3>
+                    <p>Gozotasun leun bat, bainila zapore gozoarekin, klasikoen zaleentzat perfektua.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/vanilla-Photoroom.png" class="img-fluid img-size" alt="Bainila">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Kafea</h3>
+                    <p>Kafe eta edariaren konbinazio goxo bat, egunean edozein momentutan gozatzeko ideal.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/cocacafe-Photoroom.png" class="img-fluid img-size" alt="Kafea">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Oreo</h3>
+                    <p>Oreo gaileten zaporea harrapatzen duen edaria, txokolate zaleentzat goxoa.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/oreo-Photoroom.png" class="img-fluid img-size" alt="Oreo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Txorizo</h3>
+                    <p>Aurreratuen aukera, txorizoaren zaporea burbuila batekin nahasten duena. Abenturazaleentzat!</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/txoixu-Photoroom.png" class="img-fluid img-size" alt="Txorizo">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Gerezi</h3>
+                    <p>Gerezi zapore goxoarekin edari frutala, freskagarri eta edozein momenturako egokia.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/Cherry-Photoroom.png" class="img-fluid img-size" alt="Gerezi">
+                </div>
+            </div>
+        </article>
+    </div>
+
+    <footer class="bg-dark text-center p-3 sticky-bottom container mt-4">
+        <h3 class="text-white">Jarrai iezaguzu</h3>
+        <a href="https://twitter.com/CocaColaCo_es" class="text-white">Twitter</a> |
+        <a href="https://www.youtube.com/CocaColaJourneyES" class="text-white">YouTube</a> |
+        <a href="https://www.facebook.com/CocaColaCoEspana/" class="text-white">Facebook</a>
     </footer>
 </body>
 
